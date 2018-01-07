@@ -1,0 +1,32 @@
+{
+  "name": "wedding-website-design",
+  "version": "1.0.0",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-uglify": "^1.5.3",
+    "require-dir": "^0.3.0"
+  },
+  "description": "Wedding Website Design",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp sass && gulp concatjs && gulp cssmin && gulp jsmin"
+  },
+  "author": {
+    "name": "Laetitia Zammit",
+    "url": "http://www.laezammit.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/laetitiaZammit/wedding-website-design"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^2.2.4"
+  }
+}

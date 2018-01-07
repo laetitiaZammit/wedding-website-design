@@ -1,0 +1,91 @@
+//
+// Front page
+// --------------------------------------------------
+
+.lightbox {
+	background-image: url("../images/bgs/bg-header.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 206px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+}
+
+.content {
+	background-color: $green;
+	z-index: -100;
+	position: relative;
+
+	.container {
+		padding-top: 50px;
+		padding-bottom: 25px;
+	}
+
+	.part {
+		display: block;
+	}
+
+	.date {
+		color: $white;
+		font-size: 14px;
+		display: block;
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 34px;
+	}
+
+	.text {
+		color: $white;
+		font-size: 19px;
+		text-align: center;
+	}
+
+	.separator {
+		display: none;
+	}
+
+	.mobile-sep {
+		display: block;
+		height: 2px;
+		width: 212px;
+		background-color: $white;
+		margin: 12px auto 14px auto;
+	}
+}
+
+@media (min-width: $screen-sm-min) {
+	.lightbox {
+		height: 700px;
+	}
+
+	.content {
+		.part {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 92px 0;
+		}
+
+		.separator {
+			background-color: $white;
+			width: 3px;
+			height: 359px;
+			margin: 0 auto;
+			display: block;
+		}
+
+		.date {
+			font-size: 16px;
+			margin-top: 36px;
+		}
+
+		.mobile-sep {
+			display: none;
+		}
+	}
+
+}

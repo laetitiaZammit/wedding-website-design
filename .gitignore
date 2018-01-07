@@ -1,0 +1,10 @@
+# Project
+*.DS_Store
+/gulp/sass/.sass-cache
+/gulp/node_modules/
+/gulp/npm-debug.log
+.idea/
+
+
+/static/js/all.js
+/static/js/all.min.js

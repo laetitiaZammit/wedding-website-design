@@ -1,0 +1,45 @@
+//
+// Header
+// --------------------------------------------------
+
+header {
+	.upper-header {
+		display: none;
+	}
+
+}
+
+@media (min-width: $screen-sm-min) {
+
+	header {
+		.upper-header {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 29px;
+
+			a {
+				color: $black;
+				font-family: 'Josefin Sans';
+				font-size: 12px;
+				text-transform: uppercase;
+				cursor: pointer;
+				text-decoration: none;
+				display: inline-block;
+				transition: color 0.2s linear;
+				&:hover {
+					color: $green;
+				}
+			}
+
+			.left-nav {
+				a {
+					&:first-child {
+						margin-right: 38px;
+					}
+				}
+			}
+		}
+	}
+}
+
+

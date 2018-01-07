@@ -1,0 +1,144 @@
+//
+// Footer
+// --------------------------------------------------
+footer {
+	height: auto;
+	display: block;
+	padding: 15px;
+
+	.container {
+		width: 100%;
+	}
+
+	.wrapper-footer {
+		display: block;
+
+		.logo {
+			background-image: url("../images/logotypes/zola-logo.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+			height: 30px;
+			width: 66px;
+			display: block;
+			margin: 25px auto;
+		}
+
+		.footer-menu {
+			text-align: center;
+
+			a {
+				color: $grey;
+				font-size: 12px;
+				font-family: 'Josefin Sans';
+				margin-right: 0;
+				display: block;
+				transition: color 0.2s linear;
+				margin-top: 12px;
+				margin-bottom: 12px;
+
+				&:hover {
+					color: $hover-link-footer;
+				}
+			}
+
+			.copyright-wrapper {
+				margin-top: 13px;
+
+				a, span {
+					display: inline-block;
+					color: $grey;
+					font-family: 'Josefin Sans';
+					font-size: 11px;
+					margin-right: 0;
+					transition: color 0.2s linear;
+				}
+				a:hover {
+					color: $hover-link-footer;
+				}
+				.copyright {
+					display: block;
+					margin-right: 0;
+				}
+
+				.slash {
+					margin: 0 5px;
+				}
+			}
+		}
+
+		.catch-phrase {
+			position: relative;
+			text-align: center;
+			margin-top: 30px;
+		}
+	}
+}
+
+@media (min-width: $screen-sm-min) {
+	footer {
+		height: 155px;
+		display: flex;
+		align-items: center;
+		padding: 0;
+
+		.wrapper-footer {
+			display: flex;
+			align-items: center;
+			position: relative;
+
+			.logo {
+				background-image: url("../images/logotypes/zola-logo.png");
+				background-size: contain;
+				background-repeat: no-repeat;
+				height: 30px;
+				width: 66px;
+				display: inline-block;
+				margin: 0 32px 0 0;
+			}
+
+			.footer-menu {
+				text-align: left;
+
+				a {
+					display: inline-block;
+					margin-right: 40px;
+				}
+			}
+
+			.catch-phrase {
+				position: absolute;
+				right: 0;
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+@media (min-width: $screen-md-min) {
+	footer {
+		.wrapper-footer {
+			.catch-phrase {
+				position: absolute;
+				right: 0;
+			}
+			.footer-menu {
+				.copyright-wrapper {
+					margin-top: 13px;
+
+					a, span {
+						display: inline-block;
+					}
+
+					.copyright {
+						display: inline-block;
+						margin-right: 18px;
+					}
+
+					.slash {
+						margin: 0 5px;
+					}
+				}
+			}
+		}
+	}
+}
